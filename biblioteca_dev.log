@@ -1,0 +1,176 @@
+2024-09-12T20:40:05.818-03:00  INFO 32336 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : Starting BibliotecaApplication using Java 17.0.10 with PID 32336 (C:\Users\FEF\Desktop\Lab3\biblioteca\target\classes started by FEF in C:\Users\FEF\Desktop\Lab3\biblioteca)
+2024-09-12T20:40:05.820-03:00  INFO 32336 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : The following 1 profile is active: "dev"
+2024-09-12T20:40:05.863-03:00  INFO 32336 --- [biblioteca] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T20:40:05.864-03:00  INFO 32336 --- [biblioteca] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T20:40:06.359-03:00  INFO 32336 --- [biblioteca] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:40:06.411-03:00  INFO 32336 --- [biblioteca] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2024-09-12T20:40:06.908-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:40:06.919-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:40:06.919-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:40:06.973-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:40:06.973-03:00  INFO 32336 --- [biblioteca] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1109 ms
+2024-09-12T20:40:07.006-03:00  INFO 32336 --- [biblioteca] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T20:40:07.147-03:00  INFO 32336 --- [biblioteca] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71e34139
+2024-09-12T20:40:07.148-03:00  INFO 32336 --- [biblioteca] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T20:40:07.157-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/bibliotecadb'
+2024-09-12T20:40:07.267-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:40:07.311-03:00  INFO 32336 --- [biblioteca] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T20:40:07.344-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:40:07.555-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:40:08.186-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:40:08.193-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro drop constraint if exists FKn0lgu5s5522wg7fo5i6jxvimp
+2024-09-12T20:40:08.197-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.197-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "livro" does not exist, skipping
+2024-09-12T20:40:08.197-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro drop constraint if exists FK4cn2ysaivmxmjbt3wswo4ih7n
+2024-09-12T20:40:08.198-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.198-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "livro" does not exist, skipping
+2024-09-12T20:40:08.198-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists autor cascade
+2024-09-12T20:40:08.198-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.198-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "autor" does not exist, skipping
+2024-09-12T20:40:08.198-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists editora cascade
+2024-09-12T20:40:08.198-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.198-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "editora" does not exist, skipping
+2024-09-12T20:40:08.198-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists livro cascade
+2024-09-12T20:40:08.199-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.199-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "livro" does not exist, skipping
+2024-09-12T20:40:08.199-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_autor
+2024-09-12T20:40:08.199-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.199-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "seq_autor" does not exist, skipping
+2024-09-12T20:40:08.199-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_editora
+2024-09-12T20:40:08.199-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.200-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "seq_editora" does not exist, skipping
+2024-09-12T20:40:08.200-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_livro
+2024-09-12T20:40:08.200-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-12T20:40:08.200-03:00  WARN 32336 --- [biblioteca] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "seq_livro" does not exist, skipping
+2024-09-12T20:40:08.203-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_autor start with 1 increment by 50
+2024-09-12T20:40:08.214-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_editora start with 1 increment by 50
+2024-09-12T20:40:08.216-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_livro start with 1 increment by 50
+2024-09-12T20:40:08.220-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table autor (id integer not null, documento_pessoal varchar(255) not null, nome varchar(255) not null, primary key (id))
+2024-09-12T20:40:08.234-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table editora (id integer not null, cnpj varchar(255) not null, razao_social varchar(255) not null, primary key (id))
+2024-09-12T20:40:08.239-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table livro (conservacao smallint check (conservacao between 0 and 3), data_compra date, idautor integer, ideditora integer, numero_paginas integer not null, status smallint check (status between 0 and 2), valor_compra numeric(18,3) not null, id_livro bigint not null, isbn varchar(255) not null, titulo varchar(255) not null, primary key (id_livro))
+2024-09-12T20:40:08.244-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro add constraint FKn0lgu5s5522wg7fo5i6jxvimp foreign key (idautor) references autor
+2024-09-12T20:40:08.249-03:00 DEBUG 32336 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro add constraint FK4cn2ysaivmxmjbt3wswo4ih7n foreign key (ideditora) references editora
+2024-09-12T20:40:08.251-03:00  INFO 32336 --- [biblioteca] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:40:08.307-03:00  WARN 32336 --- [biblioteca] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:40:08.728-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:40:08.753-03:00  INFO 32336 --- [biblioteca] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:40:08.761-03:00  INFO 32336 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : Started BibliotecaApplication in 3.263 seconds (process running for 3.609)
+2024-09-12T20:46:50.719-03:00  INFO 32336 --- [biblioteca] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:46:50.721-03:00  INFO 32336 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:46:50.723-03:00  INFO 32336 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T21:00:02.829-03:00  INFO 10720 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : Starting BibliotecaApplication using Java 17.0.10 with PID 10720 (C:\Users\FEF\Desktop\Lab3\biblioteca\target\classes started by FEF in C:\Users\FEF\Desktop\Lab3\biblioteca)
+2024-09-12T21:00:02.831-03:00  INFO 10720 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : The following 1 profile is active: "dev"
+2024-09-12T21:00:02.876-03:00  INFO 10720 --- [biblioteca] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T21:00:02.876-03:00  INFO 10720 --- [biblioteca] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T21:00:03.372-03:00  INFO 10720 --- [biblioteca] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T21:00:03.425-03:00  INFO 10720 --- [biblioteca] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2024-09-12T21:00:03.886-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T21:00:03.897-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T21:00:03.897-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T21:00:03.940-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T21:00:03.940-03:00  INFO 10720 --- [biblioteca] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1063 ms
+2024-09-12T21:00:03.968-03:00  INFO 10720 --- [biblioteca] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T21:00:04.084-03:00  INFO 10720 --- [biblioteca] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@246b2e2e
+2024-09-12T21:00:04.085-03:00  INFO 10720 --- [biblioteca] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T21:00:04.093-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/bibliotecadb'
+2024-09-12T21:00:04.188-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T21:00:04.237-03:00  INFO 10720 --- [biblioteca] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T21:00:04.263-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T21:00:04.492-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T21:00:05.139-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T21:00:05.146-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro drop constraint if exists FKn0lgu5s5522wg7fo5i6jxvimp
+2024-09-12T21:00:05.152-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro drop constraint if exists FK4cn2ysaivmxmjbt3wswo4ih7n
+2024-09-12T21:00:05.152-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists autor cascade
+2024-09-12T21:00:05.155-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists editora cascade
+2024-09-12T21:00:05.156-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists livro cascade
+2024-09-12T21:00:05.158-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_autor
+2024-09-12T21:00:05.159-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_editora
+2024-09-12T21:00:05.160-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_livro
+2024-09-12T21:00:05.164-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_autor start with 1 increment by 50
+2024-09-12T21:00:05.166-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_editora start with 1 increment by 50
+2024-09-12T21:00:05.168-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_livro start with 1 increment by 50
+2024-09-12T21:00:05.171-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table autor (id integer not null, documento_pessoal varchar(255) not null, nome varchar(255) not null, primary key (id))
+2024-09-12T21:00:05.177-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table editora (id integer not null, cnpj varchar(255) not null, razao_social varchar(255) not null, primary key (id))
+2024-09-12T21:00:05.182-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table livro (conservacao smallint check (conservacao between 0 and 3), data_compra date, idautor integer, ideditora integer, numero_paginas integer not null, status smallint check (status between 0 and 2), valor_compra numeric(18,3) not null, id_livro bigint not null, isbn varchar(255) not null, titulo varchar(255) not null, primary key (id_livro))
+2024-09-12T21:00:05.186-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro add constraint FKn0lgu5s5522wg7fo5i6jxvimp foreign key (idautor) references autor
+2024-09-12T21:00:05.189-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro add constraint FK4cn2ysaivmxmjbt3wswo4ih7n foreign key (ideditora) references editora
+2024-09-12T21:00:05.192-03:00  INFO 10720 --- [biblioteca] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T21:00:05.426-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_autor')
+2024-09-12T21:00:05.471-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into autor (documento_pessoal,nome,id) values (?,?,?)
+2024-09-12T21:00:05.477-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_autor')
+2024-09-12T21:00:05.478-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into autor (documento_pessoal,nome,id) values (?,?,?)
+2024-09-12T21:00:05.479-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_editora')
+2024-09-12T21:00:05.480-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into editora (cnpj,razao_social,id) values (?,?,?)
+2024-09-12T21:00:05.481-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_editora')
+2024-09-12T21:00:05.481-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into editora (cnpj,razao_social,id) values (?,?,?)
+2024-09-12T21:00:05.482-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_livro')
+2024-09-12T21:00:05.484-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:00:05.487-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_livro')
+2024-09-12T21:00:05.488-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:00:05.490-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:00:05.491-03:00 DEBUG 10720 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:00:05.530-03:00  WARN 10720 --- [biblioteca] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T21:00:05.806-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T21:00:05.828-03:00  INFO 10720 --- [biblioteca] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T21:00:05.838-03:00  INFO 10720 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : Started BibliotecaApplication in 3.311 seconds (process running for 3.654)
+2024-09-12T21:02:52.597-03:00  INFO 10720 --- [biblioteca] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T21:02:52.599-03:00  INFO 10720 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T21:02:52.601-03:00  INFO 10720 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T21:11:05.772-03:00  INFO 23384 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : Starting BibliotecaApplication using Java 17.0.10 with PID 23384 (C:\Users\FEF\Desktop\Lab3\biblioteca\target\classes started by FEF in C:\Users\FEF\Desktop\Lab3\biblioteca)
+2024-09-12T21:11:05.774-03:00  INFO 23384 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : The following 1 profile is active: "dev"
+2024-09-12T21:11:05.821-03:00  INFO 23384 --- [biblioteca] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T21:11:05.822-03:00  INFO 23384 --- [biblioteca] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T21:11:06.222-03:00  INFO 23384 --- [biblioteca] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T21:11:06.260-03:00  INFO 23384 --- [biblioteca] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2024-09-12T21:11:06.867-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T21:11:06.876-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T21:11:06.877-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T21:11:06.920-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T21:11:06.921-03:00  INFO 23384 --- [biblioteca] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1098 ms
+2024-09-12T21:11:06.953-03:00  INFO 23384 --- [biblioteca] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T21:11:07.202-03:00  INFO 23384 --- [biblioteca] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@310cc0d
+2024-09-12T21:11:07.204-03:00  INFO 23384 --- [biblioteca] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T21:11:07.215-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/bibliotecadb'
+2024-09-12T21:11:07.312-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T21:11:07.363-03:00  INFO 23384 --- [biblioteca] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T21:11:07.386-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T21:11:07.599-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T21:11:08.212-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T21:11:08.222-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro drop constraint if exists FKn0lgu5s5522wg7fo5i6jxvimp
+2024-09-12T21:11:08.227-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro drop constraint if exists FK4cn2ysaivmxmjbt3wswo4ih7n
+2024-09-12T21:11:08.228-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists autor cascade
+2024-09-12T21:11:08.230-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists editora cascade
+2024-09-12T21:11:08.231-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop table if exists livro cascade
+2024-09-12T21:11:08.232-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_autor
+2024-09-12T21:11:08.233-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_editora
+2024-09-12T21:11:08.234-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_livro
+2024-09-12T21:11:08.237-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_autor start with 1 increment by 50
+2024-09-12T21:11:08.240-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_editora start with 1 increment by 50
+2024-09-12T21:11:08.241-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create sequence seq_livro start with 1 increment by 50
+2024-09-12T21:11:08.244-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table autor (id integer not null, documento_pessoal varchar(255) not null, nome varchar(255) not null, primary key (id))
+2024-09-12T21:11:08.249-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table editora (id integer not null, cnpj varchar(255) not null, razao_social varchar(255) not null, primary key (id))
+2024-09-12T21:11:08.254-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : create table livro (conservacao smallint check (conservacao between 0 and 3), data_compra date, idautor integer, ideditora integer, numero_paginas integer not null, status smallint check (status between 0 and 2), valor_compra numeric(18,3) not null, id_livro bigint not null, isbn varchar(255) not null, titulo varchar(255) not null, primary key (id_livro))
+2024-09-12T21:11:08.258-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro add constraint FKn0lgu5s5522wg7fo5i6jxvimp foreign key (idautor) references autor
+2024-09-12T21:11:08.262-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : alter table if exists livro add constraint FK4cn2ysaivmxmjbt3wswo4ih7n foreign key (ideditora) references editora
+2024-09-12T21:11:08.264-03:00  INFO 23384 --- [biblioteca] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T21:11:08.475-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_autor')
+2024-09-12T21:11:08.516-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into autor (documento_pessoal,nome,id) values (?,?,?)
+2024-09-12T21:11:08.523-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_autor')
+2024-09-12T21:11:08.525-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into autor (documento_pessoal,nome,id) values (?,?,?)
+2024-09-12T21:11:08.526-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_editora')
+2024-09-12T21:11:08.527-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into editora (cnpj,razao_social,id) values (?,?,?)
+2024-09-12T21:11:08.528-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_editora')
+2024-09-12T21:11:08.529-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into editora (cnpj,razao_social,id) values (?,?,?)
+2024-09-12T21:11:08.530-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_livro')
+2024-09-12T21:11:08.531-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:11:08.534-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : select nextval('seq_livro')
+2024-09-12T21:11:08.535-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:11:08.537-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:11:08.539-03:00 DEBUG 23384 --- [biblioteca] [restartedMain] org.hibernate.SQL                        : insert into livro (idautor,conservacao,data_compra,ideditora,isbn,numero_paginas,status,titulo,valor_compra,id_livro) values (?,?,?,?,?,?,?,?,?,?)
+2024-09-12T21:11:08.580-03:00  WARN 23384 --- [biblioteca] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T21:11:08.830-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T21:11:08.851-03:00  INFO 23384 --- [biblioteca] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T21:11:08.858-03:00  INFO 23384 --- [biblioteca] [restartedMain] c.b.biblioteca.BibliotecaApplication     : Started BibliotecaApplication in 3.396 seconds (process running for 3.714)
+2024-09-12T21:11:59.551-03:00  INFO 23384 --- [biblioteca] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T21:11:59.552-03:00  INFO 23384 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T21:11:59.554-03:00  INFO 23384 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
